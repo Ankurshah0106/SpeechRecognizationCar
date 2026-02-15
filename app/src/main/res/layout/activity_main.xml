@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#FAFAFA"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:src="@drawable/smart_car_high" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_horizontal"
+                android:text="Smart Car Voice Controller App"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/ETXADDRESS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/vector_address"
+                android:drawablePadding="16dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:hint="Car Address (127.0.0.1:9090)" />
+
+            <Button
+                android:id="@+id/BTNCONNECT"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Press To connect" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MAIN_SHEET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="16dp"
+            android:background="#FAFAFA"
+            android:elevation="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/safebox" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center_horizontal"
+                android:text="Press Security Code to Voice Command"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:columnCount="3"
+                android:rowCount="3">
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="1"
+                    android:textColor="#FAFAFA" />
+
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="2"
+                    android:textColor="#FAFAFA" />
+
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="3"
+                    android:textColor="#FAFAFA" />
+
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="4"
+                    android:textColor="#FAFAFA" />
+
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="5"
+                    android:textColor="#FAFAFA" />
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="6"
+                    android:textColor="#FAFAFA" />
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="7"
+                    android:textColor="#FAFAFA" />
+
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="8"
+                    android:textColor="#FAFAFA" />
+
+                <Button
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/round_btn_unslected_bkg"
+                    android:onClick="securityBtnClick"
+                    android:text="9"
+                    android:textColor="#FAFAFA" />
+
+            </GridLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/BTNSPEAK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/microphone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
